@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Canada</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script> 
+  </head>  
+<body>
+  <nav>
+    <div class="nav-center">
+      <div class="nav-header">
+        <img src="https://logos-world.net/wp-content/uploads/2021/05/Air-Canada-Logo-1987-1994.png" alt="Air Canada Logo" class="logo" style="width: 150px;" />
+      </div>
+      <button id="employeeBtn">Employee Statement</button>
+      <button id="changeColorScheme">Change Color Scheme</button>
+      <button id="specialBtn">Special Button</button>
+      <ul class="links">
+        <button id="likeBtn">Like +1</button>
+        <button id="dislikeBtn">Dislike -1</button>
+        <button id="resetBtn">Reset</button>
+        <div id="counter">0</div>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="employee-section">
+    <div id="employeeInfo" class="employee-container">
+      <div class="img-container">
+        <img src="" id="person-img" alt="" />
+      </div>
+      <div class="text-container">
+        <h4 id="author"></h4>
+        <p id="job"></p>
+        <p id="info" class="employee-info"></p>
+        <div class="button-container">
+          <button class="start-btn" onclick="showStartEmployee()">
+            Start
+          </button>
+          <button class="prev-btn" onclick="showPrevEmployee()">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next-btn" onclick="showNextEmployee()">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button class="end-btn" onclick="showEndEmployee()">
+            End
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="health-section">
+    <div class="box-container">
+      <img src="https://external-preview.redd.it/canada-moves-toward-assisted-suicide-for-minors-critics-v0-UawNG8i4A6PgnWbxTIuFQFoUPj7x5n89kiU15cESOkI.jpg?width=640&crop=smart&auto=webp&s=2ce0c5480c68136c96eebc5ed88d5ca103763449" alt="health Image" class="health-image">
+      <p class="title">Health and Travel Tips</p>
+      <p>Here are some health and travel tips from Air Canada:
+<li>General health information and useful air travel tips prepared by the Aerospace Medical Association to make your trip more enjoyable can be found on Air Canada's website.</li>
+<li>The federal government advises that Canadians avoid all non–essential travel, both at home and abroad. Stay informed on the latest travel rules and restrictions by visiting the Government of Canada’s site on travel health notices. If your reason for travel is considered essential by a province or territory under the Quarantine Act’s emergency orders (and you are given an exemption by the government of Canada) here are some helpful resources to help you plan your trip. You can find more information on Air Canada's enRoute website.</li>
+<li>You can also check out [Air Canada's Before You Travel Checklist] to make sure you have everything you need before your trip.</li></p>
+     </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
